@@ -6,10 +6,12 @@ import {HomeRoutes} from '../components';
 import {DrawerContent, DRAWER_WIDTH} from './Drawer';
 
 const Drawer = createDrawerNavigator<HomeRoutes>();
-export const HomeNavigator = () => (
-  <Drawer.Navigator
+ const HomeNavigator = () => {
+  return(<Drawer.Navigator
     drawerContent={() => <DrawerContent />}
     drawerStyle={{width: DRAWER_WIDTH}}>
     <Drawer.Screen name="OutfitIdeas" component={OutfitIdeas} />
-  </Drawer.Navigator>
-);
+  </Drawer.Navigator>)
+  }
+
+export default HomeNavigator;
