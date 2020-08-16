@@ -21,6 +21,10 @@ export default function App() {
               name="Authentication"
               component={AuthenticationNavigator}
             />
+            <Stack.Screen
+              name="Home"
+              component={Home}
+            />
           </Stack.Navigator>
         </SafeAreaProvider>
       </NavigationContainer>
