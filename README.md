@@ -29,5 +29,6 @@ This is a simple application developed using React Native. The app is based on t
 
 ---
 
-Made with ❤ by Isaque Igor! <br>
+Made with ❤ by Isaque Igor and srikanthnani! <br>
 [Follow me on social networks!](https://linktr.ee/isaqueigor)
+[Follow me on social networks!](https://twitter.com/iamsrikantnani)
