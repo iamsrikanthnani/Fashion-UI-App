@@ -3,7 +3,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 
 import {AuthenticationRoutes} from '../components/Navigation';
 
-import Onboarding, {assets as onBoardingAssets} from './Onboarding';
+import Onboarding, {assets as onBoardingAssets} from './OnBoarding';
 import {assets as HomeAssets} from '../Home/Drawer';
 import Welcome, {assets as welcomeAssets} from './Welcome';
 
@@ -18,7 +18,7 @@ export const assets = [...authenticationAssets, ...HomeAssets];
 
 const AuthenticationStack = createStackNavigator<AuthenticationRoutes>();
 export const AuthenticationNavigator = () => {
-  <AuthenticationStack.Navigator headerMode="none">
+  return(<AuthenticationStack.Navigator headerMode="none">
     <AuthenticationStack.Screen name="Onboarding" component={Onboarding} />
     <AuthenticationStack.Screen name="Welcome" component={Welcome} />
     <AuthenticationStack.Screen name="Login" component={Login} />
@@ -31,5 +31,6 @@ export const AuthenticationNavigator = () => {
       name="PasswordChanged"
       component={PasswordChanged}
     />
-  </AuthenticationStack.Navigator>;
+  </AuthenticationStack.Navigator>)
 };
+
