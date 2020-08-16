@@ -35,7 +35,7 @@ const Container = ({children, footer, pattern}: ContainerProps) => {
           <Box
             borderBottomLeftRadius="xl"
             overflow="hidden"
-            height={height * 0.61}>
+            height={height * 0.30}>
             <Image
               source={asset}
               style={{
